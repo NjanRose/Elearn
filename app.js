@@ -12,16 +12,21 @@ async = require('async');
 // var mongoDB = 'mongodb://localhost/elearn';
 // mongoose.connect(mongoDB);
 
-const dbpath = "mongodb+srv://rose:rose@cluster0-ennzr.mongodb.net/test?retryWrites=true&w=majority/elearn";
+const dbpath = "mongodb+srv://rose:rose@cluster0-ennzr.mongodb.net/test?retryWrites=true&w=majority";
 //const dbpath = "mongodb://localhost:27017/elearn";
 
 
-const mongo = mongoose.connect(dbpath, {useNewUrlParser: true, useUnifiedTopology: true });
-mongo.then(() => {
-console.log('connected');
-}).catch((err) => {
-console.log('err', err);
-});
+// const mongo = mongoose.connect(dbpath, {useNewUrlParser: true, useUnifiedTopology: true });
+// mongo.then(() => {
+// console.log('connected');
+// }).catch((err) => {
+// console.log('err', err);
+// });
+
+const mongo = mongoose
+     .connect( dbpath, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
+     .then(() => console.log( 'Database Connected' ))
+     .catch(err => console.log( err ));
 
 //Get the default connection
 var db = mongoose.connection;
