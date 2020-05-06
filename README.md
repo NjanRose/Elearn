@@ -12,5 +12,5 @@ https://dry-beyond-88033.herokuapp.com/
 5. Add classes by inserting: {title: "title goes here", description: "dcvbnmnccywvubn", instructor:"someone"}
 6. Go to app.js and put const dbpath = "mongodb://localhost:27017/elearn" so that you can connect to your local database.
 7. Go to package.json file: This has all the dependencies. They have to be installed.
-8. You can install them using the command: npm install ________(dependency name)
+8. You can install them using the command(Download the exact same version as in the file to avoid problems):npm install ____(dependency name) 
 9. npm start
