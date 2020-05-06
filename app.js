@@ -12,7 +12,7 @@ async = require('async');
 // var mongoDB = 'mongodb://localhost/elearn';
 // mongoose.connect(mongoDB);
 
-const dbpath = "mongodb+srv://rose:rose@cluster0-ennzr.mongodb.net/test?retryWrites=true&w=majority";
+const dbpath = "mongodb+srv://rose:rose@cluster0-ennzr.mongodb.net/test?retryWrites=true&w=majority/elearn";
 //const dbpath = "mongodb://localhost:27017/elearn";
 
 
