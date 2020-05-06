@@ -12,8 +12,8 @@ async = require('async');
 // var mongoDB = 'mongodb://localhost/elearn';
 // mongoose.connect(mongoDB);
 
-//const dbpath = "mongodb://njanrose499@gmail.com:RoBiM123!@ds121599.mlab.com:21599/CloudFoundry_rla8jvid_8g7kaba3";
-const dbpath = "mongodb://localhost:27017/elearn";
+const dbpath = "mongodb+srv://rose:rose@cluster0-ennzr.mongodb.net/test?retryWrites=true&w=majority/elearn";
+//const dbpath = "mongodb://localhost:27017/elearn";
 
 
 const mongo = mongoose.connect(dbpath, {useNewUrlParser: true, useUnifiedTopology: true });
