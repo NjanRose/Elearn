@@ -10,7 +10,7 @@ var ClassSchema = mongoose.Schema({
   }]
 });
 
-var Class = module.exports = mongoose.model('elearn.classes',ClassSchema);
+var Class = module.exports = mongoose.model('classes',ClassSchema);
 
 //fetch all Classes
 module.exports.getClasses = function(callback,limit){
